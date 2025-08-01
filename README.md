@@ -1,8 +1,6 @@
-## README: 本文档提供了从可视化工具的镜像构建、镜像部署、到工具的使用方法指南,
-## 涵盖了从数据处理到信号碱基序列可视化的整个流程.
+## README: 本文档提供了从可视化工具的镜像构建、镜像部署、到工具的使用方法指南,涵盖了从数据处理到信号碱基序列可视化的整个流程.
 
-目前cytools(碱基序列、movetable)、uncalled4(ul-tag)、signal-analyzer(信号碱基序列对齐可视化)分步依序独立串行运行.
-
+- 目前cytools(碱基序列、movetable)、uncalled4(ul-tag)、signal-analyzer(信号碱基序列对齐可视化)分步依序独立串行运行.
 
 ---
 
