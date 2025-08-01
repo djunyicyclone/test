@@ -1,5 +1,5 @@
-# README: 本文档提供了从可视化工具的镜像构建、镜像部署、到工具的使用方法指南,
-# 涵盖了从数据处理到信号碱基序列可视化的整个流程.
+## README: 本文档提供了从可视化工具的镜像构建、镜像部署、到工具的使用方法指南,
+## 涵盖了从数据处理到信号碱基序列可视化的整个流程.
 
 目前cytools(碱基序列、movetable)、uncalled4(ul-tag)、signal-analyzer(信号碱基序列对齐可视化)分步依序独立串行运行.
 
@@ -122,7 +122,7 @@ uncalled4 align -C /data/dengjunyi/code/uncalled4/example/align.toml -p 1 --bam-
 
 ## 📊 signal-analyzer 工具的使用
 - 输入要求已有经过Uncalled4处理产出的bam文件
-# 使用 signal-to-reference 比对信息作图，对目标区域进行可视化如 ad36f57dd29d43c6_1.fwd:1030-1070 , sample-size为采样个数
+## 使用 signal-to-reference 比对信息作图，对目标区域进行可视化如 ad36f57dd29d43c6_1.fwd:1030-1070 , sample-size为采样个数
 ```bash
 REGION="ad36f57dd29d43c6_1.fwd:1030-1070"
 signal-analyzer plot-pileup \
