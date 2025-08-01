@@ -44,7 +44,7 @@ cd /data/dengjunyi/env/softs
 bash cytools_1.1.11.2_20250711.sh
 ```
 
-#### 3.2 安装 Uncalled4 主程序
+#### 3.2 安装 Uncalled4
 ```bash
 cd /data/dengjunyi/code/uncalled4
 pip install -e .
@@ -54,6 +54,20 @@ pip install -e .
 ```bash
 cd /data/dengjunyi/code/uncalled4/pyccf5-main
 python setup.py install
+```
+
+#### 3.4 安装 Signal-Analyzer
+```sh
+conda env create -f environment.yml -p ./env
+conda activate ./env
+
+# 从源码安装
+cd external/cyccf && python setup.py install && cd ../../
+pip install -ve .
+
+# 从wheel文件安装
+pip install dist/pyslow5-1.2.0b0-cp312-cp312-linux_x86_64.whl
+pip install dist/signal_analyzer-0.2.1-py3-none-any.whl
 ```
 
 
@@ -120,7 +134,7 @@ uncalled4 align -C /data/dengjunyi/code/uncalled4/example/align.toml -p 1 --bam-
 
 ## 📊 signal-analyzer 工具的使用
 - 输入要求已有经过Uncalled4处理产出的bam文件
-##  使用 signal-to-reference 比对信息作图，对目标区域进行可视化如 ad36f57dd29d43c6_1.fwd:1030-1070 , sample-size为采样个数
+###  使用 signal-to-reference 比对信息作图，对目标区域进行可视化如 ad36f57dd29d43c6_1.fwd:1030-1070 , sample-size为采样个数
 ```bash
 REGION="ad36f57dd29d43c6_1.fwd:1030-1070"
 signal-analyzer plot-pileup \
