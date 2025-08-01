@@ -122,7 +122,7 @@ uncalled4 align -C /data/dengjunyi/code/uncalled4/example/align.toml -p 1 --bam-
 
 ## 📊 signal-analyzer 工具的使用
 - 输入要求已有经过Uncalled4处理产出的bam文件
-# 使用 signal-to-reference 比对信息作图，对 ad36f57dd29d43c6_1.fwd:1030-1070 区域进行可视化, sample-size为采样个数
+# 使用 signal-to-reference 比对信息作图，对目标区域进行可视化如 ad36f57dd29d43c6_1.fwd:1030-1070 , sample-size为采样个数
 ```bash
 REGION="ad36f57dd29d43c6_1.fwd:1030-1070"
 signal-analyzer plot-pileup \
